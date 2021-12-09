@@ -1,6 +1,6 @@
 # Text Manipulator
 - An Open Source text manipulator for creating consistent titles with capital/small cases
-- [Trhttps://muhammad-yazdian.github.io/text_manipulator/emo](url)
+- [Try demo](https://muhammad-yazdian.github.io/text_manipulator/)
 
 # Contributions are Welcomed
 ## Contribution Guidelines for this Project
