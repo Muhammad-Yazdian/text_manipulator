@@ -24,6 +24,10 @@ function updateText(text){
     case 'all-small':
       outputText.value = text.toLowerCase();
       break;
+    case 'sentence':
+      outputText.value = text.charAt(0).toUpperCase() + 
+                         text.substr(1).toLowerCase();
+      break;
     case 'true-title':
       outputText.value = toTrueTitleCase(text);
       break;
