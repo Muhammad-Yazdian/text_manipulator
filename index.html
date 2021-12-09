@@ -6,20 +6,33 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Text Manipulator</title>
+  <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
-  <div>
+  <div class="container">
     <h1>Text Manipulator</h1>
-    <section style="max-width: 960px; margin: 0 auto;">
-      <h2>Fix Title</h2>
-      <h3>Input</h3>
-      <input type="text" id="text-in" style="width: 90%;">
-      <button id="btn-fix">Fix</button>
-      <br>
-      <br>
-      <h3>Result</h3>
-      <p id="text-out" style="width: 90%;"></p>
+    <section>
+      <form>
+        <h2>Fix Title</h2>
+        <p>Quickly modify your article/post/book titles!</p>
+        <label for="text-in">Input</label>
+        <input id="text-in" type="text" 
+          placeholder="Type in or paste your text here.">
+        <label for="text-out">Output</label>
+        <input id="text-out" type="text" placeholder="Result..." 
+          disabled style="background-color:lightgreen;">
+        <input type="radio" name="select-text-format" id="id-all-caps" 
+          value="all-caps" onchange="radioButtonHandler(this);" 
+          checked="checked">All Caps
+        <input type="radio" name="select-text-format" id="id-all-small" 
+          value="all-small" onchange="radioButtonHandler(this);">All Small
+        <input type="radio" name="select-text-format" id="id-sentence" 
+          value="sentence" onchange="radioButtonHandler(this);" 
+          disabled>Sentence
+        <input type="radio" name="select-text-format" id="id-true-Title" 
+          value="true-title" onchange="radioButtonHandler(this);">True Title
+      </form>
     </section>
   </div>
   <script src="js/toTitleCase.js"></script>
