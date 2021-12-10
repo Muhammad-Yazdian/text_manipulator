@@ -14,7 +14,7 @@
     <h1>Text Manipulator</h1>
     <section>
       <form>
-        <h2>Fix Title</h2>
+        <h2>Title Manipulator</h2>
         <p>Quickly modify your article/post/book titles!</p>
         <label for="text-in">Input</label>
         <input id="text-in" type="text" 
@@ -22,6 +22,7 @@
         <label for="text-out">Output</label>
         <input id="text-out" type="text" placeholder="Result..." 
           disabled style="background-color:lightgreen;">
+        Select format:
         <input type="radio" name="select-text-format" id="id-all-caps" 
           value="all-caps" onchange="radioButtonHandler(this);" 
           checked="checked">All Caps
@@ -31,6 +32,19 @@
           value="sentence" onchange="radioButtonHandler(this);">Sentence
         <input type="radio" name="select-text-format" id="id-true-Title" 
           value="true-title" onchange="radioButtonHandler(this);">True Title
+      </form>
+      <br>
+      <form>
+        <h2>Reference Manipulator</h2>
+        <p>Quickly format your reference for cited papers</p>
+        <label for="ref-text-in">Input</label>
+        <input id="ref-text-in" type="text" 
+          placeholder="Type in or paste your reference here.">
+        <label for="ref-text-out">Output</label>
+        <input id="ref-text-out" type="text" placeholder="Result..." 
+          disabled style="background-color:lightgreen;">
+        Select format: IEEE | API | 
+        <!-- TBD Add radio buttons -->
       </form>
     </section>
   </div>
